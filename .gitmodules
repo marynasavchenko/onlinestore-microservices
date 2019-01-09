@@ -1,3 +1,6 @@
 [submodule "customer-service"]
 	path = customer-service
 	url = https://github.com/marinasavchenko/customer-service.git
+[submodule "configuration-service"]
+	path = configuration-service
+	url = git@github.com:marinasavchenko/configuration-service.git
