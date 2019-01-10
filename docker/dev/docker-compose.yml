@@ -12,7 +12,7 @@ services:
     extends:
       file: ../common/docker-compose.yml
       service: configserver
-  licensingservice:
+  customerservice:
     image: marinasavchenko/onlinestore-customersrv:v1
     ports:
       - "8080:8080"

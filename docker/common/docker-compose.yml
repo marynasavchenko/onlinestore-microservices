@@ -11,8 +11,8 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "1234567"
-      POSTGRES_DB:       "customers_local"
-  licensingservice:
+      POSTGRES_DB: "customers_local"
+  customerservice:
     image: marinasavchenko/onlinestore-customersrv:v1
     ports:
       - "8080:8080"
@@ -21,4 +21,3 @@ services:
       CONFIGSERVER_URI: "http://configserver:8888"
       CONFIGSERVER_PORT:   "8888"
       DATABASESERVER_PORT: "5432"
-#      ENCRYPT_KEY:       "IMSYMMETRIC"
