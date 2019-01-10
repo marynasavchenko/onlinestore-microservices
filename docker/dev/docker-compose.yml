@@ -1,4 +1,4 @@
-version: '1'
+version: '3'
 services:
   database:
     extends:
@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "1234567"
-      POSTGRES_DB:       "customers_dev"
+      POSTGRES_DB: "customers_dev"
   configserver:
     extends:
       file: ../common/docker-compose.yml

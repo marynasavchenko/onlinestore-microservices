@@ -1,11 +1,9 @@
-version: '1'
+version: '3'
 services:
   configserver:
     image:  marinasavchenko/onlinestore-configsrv:v1
     ports:
       - "8888:8888"
-    environment:
-#      ENCRYPT_KEY:       "IMSYMMETRIC"
   database:
     image: postgres:9.5
     ports:
