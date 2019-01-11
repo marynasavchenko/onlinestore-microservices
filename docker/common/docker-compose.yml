@@ -26,3 +26,5 @@ services:
     depends_on:
       - configserver
       - database
+  volumes:
+    db-data:
