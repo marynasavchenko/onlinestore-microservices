@@ -6,6 +6,8 @@ services:
       - "8888:8888"
   database:
     image: postgres:9.5
+    volumes:
+      - db-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     environment:
