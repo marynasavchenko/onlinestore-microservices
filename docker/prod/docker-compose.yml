@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "1234567"
-      POSTGRES_DB:       "customers_prod"
+      POSTGRES_DB: "customers_prod"
   configserver:
     extends:
       file: ../common/docker-compose.yml

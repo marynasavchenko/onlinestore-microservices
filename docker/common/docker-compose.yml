@@ -21,3 +21,6 @@ services:
       CONFIGSERVER_URI: "http://configserver:8888"
       CONFIGSERVER_PORT:   "8888"
       DATABASESERVER_PORT: "5432"
+    depends_on:
+      - configserver
+      - database
