@@ -4,6 +4,8 @@ services:
     image:  marinasavchenko/onlinestore-configsrv:v1
     ports:
       - "8888:8888"
+    environment:
+      ENCRYPT_KEY: "STTEELCAROECJ"
   database:
     image:  postgres:9.5
     volumes:
@@ -31,6 +33,7 @@ services:
       POSTGRES_PASSWORD: "1234567"
       POSTGRES_HOST: "database"
       DATABASESERVER_PORT: "5432"
+      ENCRYPT_KEY: "STTEELCAROECJ"
     links:
       - configserver
       - database
