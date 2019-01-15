@@ -4,3 +4,6 @@
 [submodule "configuration-service"]
 	path = configuration-service
 	url = git@github.com:marinasavchenko/configuration-service.git
+[submodule "order-service"]
+	path = order-service
+	url = git@github.com:marinasavchenko/order-service.git
