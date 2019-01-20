@@ -7,3 +7,6 @@
 [submodule "order-service"]
 	path = order-service
 	url = git@github.com:marinasavchenko/order-service.git
+[submodule "spring-cloud-eureka-service"]
+	path = spring-cloud-eureka-service
+	url = git@github.com:marinasavchenko/spring-cloud-eureka-service.git
