@@ -2,9 +2,10 @@
 
 Online store is a microservices application. It contains of:
 
-1. A customer service - manages customer data
-2. A configuration service - manages a services configuration information
-3. A Postgres SQL database
+1. An order service - manages orders
+2. A customer service - manages customer data
+3. A configuration service - manages a services configuration information
+4. A Postgres SQL database
 
 ## **Building**
 
@@ -30,12 +31,12 @@ mvn clean test
 ## **Technology stack**
 
 * Java 8
-* Spring Boot 2
+* Spring Boot
 * Spring Cloud
 * Spring Data
 * Postgres SQL
 
-* jUnit 4
+* jUnit
 * Mockito
 
 * Maven
