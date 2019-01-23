@@ -5,7 +5,8 @@ Online store is a microservices application. It contains of:
 1. An order service - manages orders
 2. A customer service - manages customer data
 3. A configuration service - manages a services configuration information
-4. A Postgres SQL database
+4. Spring cloud eureka service - service registry
+5. A Postgres SQL database
 
 ## **Building**
 
