@@ -1,5 +1,9 @@
 version: '3.3'
 services:
+  eurekaserver:
+    image:  marinasavchenko/onlinestore-eurekasrv:v1
+    ports:
+      - "8761:8761"
   configserver:
     image:  marinasavchenko/onlinestore-configsrv:v1
     ports:
