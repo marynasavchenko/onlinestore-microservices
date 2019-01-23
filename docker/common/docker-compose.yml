@@ -22,12 +22,25 @@ services:
       POSTGRES_PASSWORD: "1234567"
       POSTGRES_DB: "customers_local"
       POSTGRES_PORT: "5432"
+  orderservice:
+    image: marinasavchenko/onlinestore-ordersrv:v1
+    ports:
+      - "8080:8080"
+    environment:
+      PROFILE: "default"
+      SERVER_PORT: "8080"
+      CONFIGSERVER_URI: "http://configserver:8888"
+      EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+      EUREKASERVER_PORT: "8761"
+      CONFIGSERVER_PORT: "8888"
+      DATABASESERVER_PORT: "5432"
+      ENCRYPT_KEY: "STTEELCAROECJ"
   customerservice:
     image:  marinasavchenko/onlinestore-customersrv:v1
     expose:
-      - "8080"
+      - "8085"
     ports:
-      - "8080:8080"
+      - "8085:8085"
     environment:
       PROFILE: "default"
       CONFIGSERVER_URI: "http://configserver:8888"
@@ -37,6 +50,8 @@ services:
       POSTGRES_PASSWORD: "1234567"
       POSTGRES_HOST: "database"
       DATABASESERVER_PORT: "5432"
+      EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+      EUREKASERVER_PORT: "8761"
       ENCRYPT_KEY: "STTEELCAROECJ"
     links:
       - configserver
