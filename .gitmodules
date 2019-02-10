@@ -10,3 +10,6 @@
 [submodule "spring-cloud-eureka-service"]
 	path = spring-cloud-eureka-service
 	url = git@github.com:marinasavchenko/spring-cloud-eureka-service.git
+[submodule "zuul-service"]
+	path = zuul-service
+	url = git@github.com:marinasavchenko/zuul-service.git
