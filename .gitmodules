@@ -13,3 +13,6 @@
 [submodule "zuul-service"]
 	path = zuul-service
 	url = git@github.com:marinasavchenko/zuul-service.git
+[submodule "alternativeroutes-service"]
+	path = alternativeroutes-service
+	url = git@github.com:marinasavchenko/alternativeroutes-service.git
