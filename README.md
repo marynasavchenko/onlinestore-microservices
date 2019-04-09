@@ -1,39 +1,41 @@
 ## **Online store**
 
-Online store is a microservices application. It contains of:
+Online store is microservices application. It consists of backend services:
 
 1. Order service - manages orders
 2. Customer service - manages customer data (name, address, etc.)
-3. Configuration service - manages a services configuration information
+3. Configuration service - manages services configuration information
 4. Spring cloud eureka service - service registry
 5. Zuul service - services gateway
 6. Alternative routes service - has a database record for the customer service that can be used for redirection to different versions of the service
-7. Postgres SQL database
+
+Order service, Customer service and Alternative routes service have their own REST APIs and their own private datastores.
+Each service has its own source code repository.
 
 ## **Building**
 
-1. To compile source code and build Docker images for all services:
+To compile source code and build Docker images for all services:
 ```
 mvn clean package docker:build
 ```
 
 ## **Running**
 
-1. To start all services in Docker containers with docker-compose:
+To start all services in Docker containers with docker-compose:
 ```
 docker-compose –f docker/common/docker-compose.yml up
 ```
 
 ## **Running the tests**
 
-1.To run tests for all services via Maven:
+To run tests for all services via Maven:
 ```
 mvn clean test
 ```
 
 ## **Technology stack**
 
-* Java 8
+* Java
 * Spring Boot
 * Spring Cloud
 * Spring Data
